@@ -1,0 +1,9 @@
+<% if @words.any? %>
+  <h3>Click a word to see it's definition</h3>
+  <ul>
+  <% @words.each do |word|%>
+    <li class="text-center"><%= word.name %></li>
+  <% end %>
+<% else%>
+  <h3 class="text-center"> Create a word </h3>
+<% end %>
