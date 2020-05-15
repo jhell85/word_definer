@@ -26,7 +26,9 @@ class Word
     @@words = {}
   end
 
-  def update(word)
+  def update(name)
+    self.name = name
+    @@words[self.id] = Word.new({:name => self.name, :id => self.id})
 
   end
 end
