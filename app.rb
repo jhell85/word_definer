@@ -5,5 +5,6 @@ require('pry')
 also_reload('lib/**/*.rb')
 
 get('/') do
-  'Hello World'
+  @words = Word.all
+  erb(:words)
 end
