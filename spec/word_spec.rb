@@ -2,13 +2,13 @@ require('word')
 require ('pry')
 require ('rspec')
 
-describe "#Word" do
+describe("#Word") do
 
   before(:each) do
     Word.clear
   end
   
-  describe '#save' do
+  describe('#save') do
     it 'saves a word' do
       word = Word.new({ :name => "banana", :id => nil})
       word.save
@@ -22,4 +22,14 @@ describe "#Word" do
       expect(Word.all).to(eq([]))
     end
   end
+  describe('#update') do 
+    it('updates a word by id') do 
+      word = Word.new({:name => 'banana', :id => nil})
+      word.save
+      word.update('apple')
+      expect(word.name).to(eq("apple"))
+    end
+  end
+
+  
 end
