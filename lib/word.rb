@@ -25,4 +25,8 @@ class Word
   def self.clear 
     @@words = {}
   end
+
+  def update(word)
+
+  end
 end
