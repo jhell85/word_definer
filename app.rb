@@ -8,3 +8,7 @@ get('/') do
   @words = Word.all
   erb(:words)
 end
+
+get('/words/new') do 
+  erb(:new_word)
+end
