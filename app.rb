@@ -19,3 +19,8 @@ post('/words') do
   word.save
   redirect to ('/')
 end
+
+get('/words/:id') do
+  @word = Word.find(params[:id].to_i)
+  erb(:word)
+end
