@@ -1,4 +1,6 @@
 body{
   background-color: darkgray;
-  
+}
+ol{ 
+  list-style-type: none;
 }
