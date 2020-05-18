@@ -42,3 +42,13 @@ delete('/words/:id') do
   @word.delete
   redirect to('/')
 end
+
+# Definitions routes 
+
+post('/words/:id/definitions') do
+  @word = Word.find(parms[:id].to_i)
+  name = params[:name]
+  definition = Definition.new({:name => name, :id => nil})
+  definition.save
+  erb(:word)
+end
