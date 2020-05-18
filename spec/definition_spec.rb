@@ -68,5 +68,16 @@ describe '#definition' do
       expect(definition.name).to(eq('an act of traveling or an excursion on foot.'))
     end
   end
-  
+
+  describe('#delete') do 
+    it("deletes a definition by id") do 
+      definition = Definition.new({:name => "move at a regular pace by lifting and setting down each foot in turn, never having both feet off the ground at once.", :word_id => @word.id, :id => nil})
+      definition.save
+      definition2 = Definition.new({:name => 'an act of traveling or an excursion on foot.', :id => nil, :word_id => @word.id})
+      definition2.save
+      definition.delete
+      expect(Definition.all).to(eq([definition2]))
+    end
+  end
+
 end
