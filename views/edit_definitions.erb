@@ -1,0 +1,15 @@
+ <a href="/words/<%= @word.id %>"><h3 class="text-center"><%= @word.name %></h3></a>
+<%= @definition.name %>
+<form action='/words/<%= @word.id %>/definitions/<%= @definition.id %>' method="post">
+  <input name="_method" type="hidden" value="delete">
+  <button class="btn-danger btn mt-5 ">Delete</button>
+</form>
+<form class="container" action='/words/<%= @word.id %>/definitions/<%= @definition.id %>' method='post'>
+   <input name="_method" type="hidden" value="patch">
+  <div class="row">
+    <div class="col-3"></div>
+    <textarea class="text-center col-6 mt-2" name="name"><%= @definition.name %></textarea>
+    <div class="col-3">
+  </div>
+  <button type="submit" class="btn btn-success">Edit Definition</button>
+</form>

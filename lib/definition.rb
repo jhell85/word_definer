@@ -15,7 +15,7 @@ class Definition
 
   def self.find_by_word(word_id) 
     definitions = []
-    @@defintions.values.each do |definition|
+    @@definitions.values.each do |definition|
       if definition.word_id == word_id
         definitions.push(definition)
       end

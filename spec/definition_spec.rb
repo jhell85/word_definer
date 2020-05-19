@@ -80,4 +80,17 @@ describe '#definition' do
     end
   end
 
+  describe('.find_by_word') do 
+    it("finds a definitions for a word") do
+      word2 = Word.new({:name => "fish", :id => nil})
+      word2.save
+      fish_definition = Definition.new({:name => 'a limbless cold-blooded vertebrate animal with gills and fins and living wholly in water.', :word_id => word2.id, :id => nil})
+      fish_definition.save
+      definition = Definition.new({:name => "move at a regular pace by lifting and setting down each foot in turn, never having both feet off the ground at once.", :word_id => @word.id, :id => nil})
+      definition.save
+      definition2 = Definition.new({:name => 'an act of traveling or an excursion on foot.', :id => nil, :word_id => @word.id})
+      definition2.save
+      expect(Definition.find_by_word(word2.id)).to (eq([fish_definition]))
+    end
+  end
 end
