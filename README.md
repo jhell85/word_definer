@@ -58,7 +58,14 @@ cd folder name
 
 Behavoir | Input | Output
 :---------|:------:|:------:
-|1 - The program will take in a simple input and return the input | 'hello' | 'hello' |
+|1 - The program will let a user  input and save a word | 'hello' | 'hello' is saved |
+|1 - The program will show a user all words that have been inputted | 'hello' | display shows 'hello' |
+|1 - The program will let a user edit an inputted word | 'hello' => edited to 'bye' | display shows 'bye' |
+|1 - The program will let a user delete an inputted word | 'hello' => deleted  | display has removed word |
+|1 - The program will let a user input a definition for a word | 'hello' => definition => 'a greeting' | 'hello' has a definition of 'a greeting' |
+|1 - The program will let a user see all the inputted definitions for a word | 'hello' => definition => 'a greeting' | display shows 'hello' as a word and 'a greeting' as a definition for it|
+|1 - The program will let a user edit an inputted definition | 'hello' => definition edited => 'formal greeting'  | 'hello' has a definition of 'formal greeting' |
+|1 - The program will let a user delete an inputted definition| 'hello'=>definition deleted | 'hello' shows no definitions |
 
 
 ## Support 
@@ -72,12 +79,8 @@ _The software is provided as is. It might work as expected - or not. Use at your
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Used for interactivity in the page
 * [jQuery](https://jquery.com/) - Used to interact with the DOM
 * [Bootstrap 4.4](https://getbootstrap.com/) - Used for styling
-* [webpack](https://webpack.js.org/)
-* [Sass](https://sass-lang.com/)
-* [ESLint](https://eslint.org/)
-* [Node.js](https://nodejs.org/en/)
-* [Uglifyjs](https://www.uglifyjs.net/)
-* [Jest](https://jestjs.io/)
+* Ruby 
+
 
 ### License
 
