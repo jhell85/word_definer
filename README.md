@@ -75,11 +75,11 @@ _The software is provided as is. It might work as expected - or not. Use at your
 
 ## Built With
 
+* [Ruby](https://www.ruby-lang.org/en/) - Primary Language
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Simple Scaffolding
-* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Used for interactivity in the page
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Used for interactivity in the page 
 * [jQuery](https://jquery.com/) - Used to interact with the DOM
 * [Bootstrap 4.4](https://getbootstrap.com/) - Used for styling
-* Ruby 
 
 
 ### License
